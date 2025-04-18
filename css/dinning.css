@@ -1,0 +1,180 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Navigation Bar */
+.main-navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.main-navbar .navbar-brand img {
+    height: 50px;
+}
+
+.main-navbar .navbar-nav .nav-link {
+    color: #333;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.main-navbar .navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Page Header */
+.page-header {
+    background-color: #007bff;
+    color: white;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.page-header p {
+    font-size: 1.25rem;
+    margin-top: 1rem;
+}
+
+/* Dining Details Section */
+.dining-detail {
+    padding: 4rem 0;
+}
+
+.dining-gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1.5rem;
+}
+
+.dining-gallery .row {
+    margin-top: 1.5rem;
+}
+
+.dining-gallery .col-6 img {
+    border-radius: 10px;
+}
+
+.dining-info h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+
+.dining-info p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 1.5rem;
+    line-height: 1.6;
+}
+
+.dining-hours, .dining-menu {
+    margin-top: 2rem;
+}
+
+.dining-hours h3, .dining-menu h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #007bff;
+}
+
+.dining-hours p, .dining-menu ul {
+    font-size: 1rem;
+    color: #555;
+}
+
+.dining-menu ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.dining-menu ul li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.dining-menu ul li::before {
+    content: "•";
+    color: #007bff;
+    padding-right: 8px;
+}
+
+/* Reservation Button */
+.dining-info .btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.dining-info .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+footer .footer-social {
+    margin-top: 1.5rem;
+}
+
+footer .footer-social a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+footer .footer-social a:hover {
+    color: #007bff;
+}
+
+footer .footer-social .social-icon {
+    font-size: 1.5rem;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .dining-detail .row {
+        flex-direction: column;
+    }
+
+    .dining-gallery .row {
+        flex-direction: column;
+    }
+
+    .dining-gallery .col-6 img {
+        margin-bottom: 1rem;
+    }
+
+    .page-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .dining-info h2 {
+        font-size: 2rem;
+    }
+}

@@ -1,0 +1,147 @@
+/* Reset & Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+}
+
+/* Navbar */
+.main-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 0;
+}
+
+.logo {
+    height: 48px;
+}
+
+.navbar-nav .nav-link {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+                url('/img/gallery-banner.jpg') center center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 60px 0;
+}
+
+.gallery-filter {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-filter .btn {
+    font-weight: 500;
+    border-radius: 30px;
+    padding: 8px 20px;
+    margin: 0 8px;
+    transition: all 0.3s ease;
+}
+
+.gallery-filter .btn.active,
+.gallery-filter .btn:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    object-fit: cover;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
+.footer {
+    background-color: #444;
+    color: white;
+    padding: 40px 0;
+    font-size: 15px;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer address {
+    line-height: 1.6;
+    font-style: normal;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.footer-social a {
+    color: white;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #007bff;
+}
+
+/* Smooth scroll effect (optional but nice!) */
+html {
+    scroll-behavior: smooth;
+}

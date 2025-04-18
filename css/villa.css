@@ -1,0 +1,158 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar */
+.main-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 12px 0;
+}
+
+.logo {
+    height: 48px;
+}
+
+.navbar-nav .nav-link {
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+}
+
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.4)),
+                url('/assets/images/welcome.png') center center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+}
+
+.page-header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.page-header p {
+    font-size: 18px;
+    margin: 0;
+}
+
+/* Room Details */
+.room-detail-section {
+    padding: 60px 0;
+    background-color: #ffffff;
+}
+
+.room-gallery img {
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.room-gallery img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.room-info h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 22px;
+    color: #007bff;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.amenities h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.amenities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.amenities li {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.amenities i {
+    color: #007bff;
+    margin-right: 8px;
+}
+
+.room-info .btn {
+    margin-top: 20px;
+    padding: 10px 24px;
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background-color: #444;
+    color: white;
+    padding: 40px 0;
+    font-size: 15px;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+}
+
+.footer address {
+    line-height: 1.6;
+    font-style: normal;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.footer-social a {
+    color: white;
+    margin: 0 8px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #007bff;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+    .page-header h1 {
+        font-size: 32px;
+    }
+
+    .room-gallery .row > div {
+        margin-bottom: 15px;
+    }
+}
